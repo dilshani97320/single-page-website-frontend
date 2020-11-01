@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width ,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete website</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script> 
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="../img/logo.png" alt="logo" class="logo">
+            <div class="head-text">
+                <h1>The purpose is to <br>teach,bring learinig to people</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta temporibus autem ducimus quae modi tempore enim veniam molestias quam necessitatibus, ab illo, quidem voluptatum exercitationem quisquam ipsum facere culpa dicta?</p>
+                <button class="button">Read more</button>
+                <div class="line">
+                    <span class="line1"></span><br>
+                    <span class="line2"></span><br>
+                    <span class="line3"></span>
+                </div>
+            </div><!--head-text-->
+            <nav id="navi-bar">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#aboutUs">ABOUT US</a></li>
+                    <li><a href="#features">FEATURES</a></li>
+                    <li><a href="#course">COURES</a></li>
+                    <li><a href="#offres">OFFERS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav><!--navi-bar-->
+            <img src="../img/menu.png" id="menu-button">
+            <script>
+                var  menu_button=document.getElementById("menu-button");
+                var navi_bar=document.getElementById("navi-bar");
+                
+                navi_bar.style.right="-250px";//hidden nav bar
+                menu_button.onclick=function(){
+                    if(navi_bar.style.right=="-250px")
+                    {
+                        navi_bar.style.right="0px"
+                    }else{
+                        navi_bar.style.right="-250px"
+                    }
+                }
+                 
+            </script>
+
+        </div><!--container-->
+    </section>
+
+    <section id="aboutUs">
+        <div class="left-side">
+              <img src="../img/about.png" alt="about">
+        </div><!--left-side-->
+        <div class="right-side">
+            <div class="about-text">
+             <h1>About Us</h1>
+             <span class="square1"></span>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quidem nobis ex autem ipsum neque, vel omnis quia qui nihil necessitatibus cum cumque non. Vero consequuntur distinctio ex commodi accusamus.</p>   
+             <span class="square2"></span><br>
+             <span class="square3"></span><br>
+             <span class="square4"></span> 
+             <h2>"Learning is not attained by chance,it must<br>be sough for with ardor and attended to<br>with diligence"<br><h3>....Abigail Adams</h3></h2>     
+            </div><!--about-text-->  
+             </div><!--right-side-->
+
+    </section>
+
+    <section id="features">
+        <div class="row">
+        <div class="column">
+            <img src="../img/pic-1.png" alt="pic1">
+            <h2>Learn Anywhere</h2>
+            <p>Switch betwwn your computer tab;et or mobile device</p>
+        </div>
+        <div class="column">
+            <img src="../img/pic-2.png" alt="pic1">
+            <h2>Expert Teachers</h2>
+            <p>Switch betwwn your computer tab;et or mobile device</p>
+        </div>
+        <div class="column">
+            <img src="../img/pic-3.png" alt="pic1">
+            <h2>Unlimited Access</h2>
+            <p>Switch betwwn your computer tab;et or mobile device</p>
+        </div>
+    </div><!--row-->
+    <div class="buttonrow">
+        <div class="line">
+            <span class="line1"></span><br>
+            <span class="line2"></span><br>
+            <span class="line3"></span>
+        </div> 
+        <button class="button">Start Free Trial</button>
+</div><!--buttonrow-->
+    </section>
+
+    <section id="course">
+        <div class="left">
+         <h1>Browse our top<br>courses</h1>
+         <span class="square1"></span>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ducimus recusandae reprehenderit quo laborum, quis aliquid labore nemo id laboriosam adipisci, doloribus assumenda beatae. Ea iure sed maiores illum nihil!</p>
+         <button class="button">View All Courses</button><br>
+         <span class="square2"></span><br>
+             <span class="square3"></span><br>
+             <span class="square4"></span>
+        </div><!--left-->
+        <div class="right">
+          <img src="../img/course.png" alt="course">
+        </div><!--right-->
+    </section>
+
+<section id="offres">
+        <div class="left-side">
+              <img src="../img/offer.png" alt="offer">
+        </div><!--left-side-->
+        <div class="right-side">
+            <div class="offer-text">
+             <h1>Limitless Learinig,<br>limitless possibilities</h1>
+             <span class="square1"></span>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quidem nobis ex autem ipsum neque, vel omnis quia qui nihil necessitatibus cum cumque non. Vero consequuntur distinctio ex commodi accusamus.</p>   
+             
+             <button class="button">Start My Fee Month</button>
+              <span class="square2"></span><br>
+             <span class="square3"></span><br>
+             <span class="square4"></span> 
+            </div><!--about-text-->  
+             </div><!--right-side-->
+
+    </section>
+
+    <section id="contact">
+        
+        <div class="left-side">
+          <h1>Sign up to join<br>our learning community</h1>
+          <form>
+          <input type="text" name="name" placeholder="Enter Name" ><br>
+          <input type="text" name="email" placeholder="Enter Email" ><br>
+          <input type="password" name="password" placeholder="Enter Password" ><br>
+          <div class="conbtn">
+          <button class="button">Sign Up</button>
+          <button class="button">Start free Trial</button></div>
+        </form>
+        <div class="line">
+            <span class="line1"></span><br>
+            <span class="line2"></span><br>
+            <span class="line3"></span>
+        </div>
+        </div><!--left-side-->
+        <div class="right-side">
+            <img src="../img/contact.png" alt="contact">
+            
+        </div><!--right-side-->
+    
+    </section>
+
+    <section id="footer">
+        <div class="container-footer">
+            <hr>
+            <div class="left-footer">
+             <div class="footer-link">
+                 <div class="link">
+                     <h4>About Us</h4>
+                     <small>Our plans</small><br>
+                     <small>Free Trials</small>
+                 </div><!--link-->
+                 <div class="link">
+                    <h4>Product</h4>
+                    <small>Our plans</small><br>
+                    <small>Free Trials</small>
+                </div><!--link-->
+                <div class="link">
+                    <h4>Support</h4>
+                    <small>Our plans</small><br>
+                    <small>Free Trials</small>
+                </div><!--link-->
+                <div class="link">
+                    <h4>Explore</h4>
+                    <small>Our plans</small><br>
+                    <small>Free Trials</small>
+                </div><!--link-->
+             </div><!--footer-link-->
+            </div><!--left-footer-->
+            <div class="right-footer">
+                <div class="footer-info">
+                    <div class="copywrite">
+                       <small>dilshani@gmail.com</small><br>
+                       <small>dilshani@gmail.com</small>copywrite received 2020
+                    </div><!--copywrite-->
+                    <div class="logo">
+                           <img src="../img/logo.png" alt="logo">
+                           <button class="button">English</button>
+                    </div><!--logo-->
+                </div><!--footer-info-->
+            </div><!--right-footer-->
+        </div><!--container-footer-->
+
+    </section>
+    <div class="social-media">
+        <img src="../img/facebook.png" alt="facebook">
+        <img src="../img/instagram.png" alt="instragram">
+        <img src="../img/linkedin.png" alt="linkedin">
+        <img src="../img/twitter.png" alt="twitter">
+    </div><!--social-media-->
+
+    <script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    
+</body>
+</html>
